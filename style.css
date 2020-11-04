@@ -1,0 +1,731 @@
+/*****************************/
+/*GENERAL CSS RULES*/
+/****************************/
+html{
+  font-family: sans-serif;
+}
+/*
+html, body {
+  height: 100%;
+}*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*****************************/
+/*HEADER CSS RULES*/
+/****************************/
+#header-bar{
+    padding: 60px 50px;
+}
+#header-h2 {
+    float: left;
+    color: #ffffff;
+    font-size: 45px;
+
+}
+#login-btn{
+    float: right;
+    border: 5px solid #ffffff;
+    margin-top: 13px;
+   /*margin-right: 1px;*/
+   position: absolute;
+   right: 25px;
+   padding: 6px;
+   color: #ffffff;
+   font-size: larger;
+   font-weight: bolder;
+   
+
+}
+/*****************************/
+/*MAIN-SECTION CSS RULES*/
+/****************************/
+
+#main-view{
+    background: url("https://images.unsplash.com/photo-1575114819496-2f0698d2d7e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1922&q=80");
+    
+  /*background-attachment: scroll;
+/*ackground-repeat: initial; */
+   margin: 0;
+   padding: 0;
+    width: 100%;
+    height:96vh;
+  min-height:96vh;
+  position: relative;
+
+  
+}
+.entry-view{
+    padding-left: 50px; 
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+  
+}
+
+.entry-view h1{
+    margin-bottom: 30px;
+   font-size: 45px;
+   font-weight: 900;
+    line-height: 1.5em;
+    padding-top: 120px;
+}
+
+.entry-view h3{
+    margin-bottom: 30px;
+    line-height: 1.5em;
+    font-size: 22px;
+    font-weight: 700;   
+    
+}
+
+.entry-view button{
+    padding: 10px 2px;
+    width: 180px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #fa6019;
+    color   : #ffffff;
+    border: none;
+    margin-bottom: 50px;
+}
+
+/*****************************/
+/*Slider CSS begin here
+/****************************/
+
+
+  
+@keyframes fade {
+    
+  0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  .slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    background: rgb(91, 92, 91);
+
+    position: absolute;
+    top: 0;
+
+    z-index: -1;
+
+   
+  }
+
+  .slide-container .slide {
+    display: none;
+    width: 100%;
+  }
+  /*
+  .slide-container .slide.fade {
+    animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  }
+  */
+  .slide-container .slide img {
+    width: 100%;
+  }
+  
+  .dots-container{
+      position: absolute;
+      bottom: 50px;
+  }
+  /***************************************/
+  /* End of Slider CSS*/
+  /**************************************/
+
+
+  /*****************************/
+/*SECOND-SECTION CSS RULES*/
+/****************************/
+#second-view{
+    background: url("https://images.unsplash.com/photo-1516577529060-a399c7c9aa8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80");
+    width: 100%;
+    height: 78vh;
+    min-height: 88vh;
+    padding-left: 55%;
+    color: #ffffff;
+    
+}
+.second-part {
+  margin-top: 52px;
+  margin-bottom: 2px;
+ 
+}
+.second-part h1{
+    margin-bottom: 30px;
+   font-size: 35px;
+   font-weight: 600;
+    line-height: 1.0em;
+    padding-top: 160px;
+}
+
+
+ .second-part p {
+    margin-bottom: 18px;
+    line-height: 1.5em;
+    font-size: 18px;
+    font-weight: 200;   
+    font-kerning: auto;
+   
+}
+.second-part button{
+    padding: 20px ;
+    width: 180px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #fa6019;
+    color   : #ffffff;
+    border: none;
+    margin-top: 20px;
+}
+
+
+#browse{
+    width: 100%;
+    padding: 5% 5%;
+    background: #000000;
+    color: #ffffff;
+    
+    
+}
+
+#browse .browse{
+    text-align: center;
+    width: 98%;
+}
+#browse h1{
+    padding-bottom: 3px;
+    font-size: 40px;
+
+}
+#browse .browse .img-thumb{
+  /*display: flex;
+  flex-wrap: wrap;
+justify-content: center;
+align-items: center;*/
+}
+.browse .img-thumb .scroll{
+  width: 20%;
+  height: 10%;
+  margin: 2px;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  border-radius: 50px;
+background: #ffffff;
+box-shadow:  20px 20px 60px #d9d9d9, 
+             -20px -20px 60px #ffffff;
+ 
+}
+/*********************************/
+/*media queries
+/* adjust css rule for smaller screens*/
+/********************************/
+@media (max-width: 1000px){
+  .slide-container {
+   height: 100vh;
+ 
+   }
+ 
+}
+@media (max-width: 780px){
+  .slide-container {
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    max-width: 100%;
+    height: 100vh;
+    margin: auto;
+    background: rgb(91, 92, 91);
+
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+   
+  }
+
+   #header-bar{
+     margin-bottom: 3px;
+   }
+   
+}
+@media (max-width: 546px){
+    .entry-view h3{
+        padding-left: 3px;
+        font-size: 19px;
+       
+    }
+    .entry-view {
+      margin-top: 3px;
+     
+  }
+    .second-part h1{
+        margin-bottom: 30px;
+       font-size: 25px;
+       font-weight: 600;
+        line-height: 1.0em;
+        padding-top: 120px;
+    }
+
+    .slide-container {
+      height: 100vh;
+    margin-top: 3px;
+      }
+}
+
+@media (max-width: 483px){
+    .entry-view h3{
+        padding-left: 2px;
+        font-size: 17px;
+       
+    }
+}
+
+@media (max-width: 767px){
+
+  #header-bar{
+    margin-bottom: 5px;
+  }
+  .entry-view h1 {
+    margin-top: 2px;
+   
+}
+
+    #second-view{
+        background: rgb(148, 148, 14);
+        width: 100%;
+        /*height: 70vh;
+        /*min-height: 70vh;*/
+        padding-top: 90px;
+        padding-left: 50px;
+        padding-bottom: 50px;
+        
+    }
+    .second-part h1{
+       
+    font-size: 21px;
+    line-height: 28px;
+    width: 318px;
+    font-weight: 700;
+    }
+
+
+    .second-part p {
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    margin-top: 27px;
+    width: 290px;
+    max-width: 100%;
+       
+    text-align: justify;
+    }
+
+
+    #second-view button{
+        margin-bottom: 30px;
+        
+        margin-top: 10px;
+    }
+
+      
+  .slide-container {
+   margin-top: 5px;
+
+  }
+    
+}
+
+.slide-container .prev,
+.slide-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.slide-container .prev:hover,
+.slide-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.slide-container .prev {
+  left: 2px;
+}
+
+.slide-container .next {
+  right: 2px;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.dots-container .dot {
+  cursor: pointer;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  color: #333;
+  border-radius: 50%;
+  background-color: #dfd6ce;
+}
+
+.dots-container .dot.active {
+  border: 2px solid green;
+}
+
+/*****************************/
+/*player CSS RULES*/
+/****************************/
+#player{
+  background: rgb(23,22,29);
+  background: linear-gradient(90deg, rgba(23,22,29,1) 0%, rgba(66,66,113,1) 37%, rgba(73,73,87,1) 54%, rgba(79,79,88,1) 80%, rgba(8,9,25,1) 100%);
+  color: #ffff;
+  padding-top: 23px;
+  padding-bottom: 25px;
+
+  
+}
+#player h2{
+  text-align: center;
+  font-size: 35px;
+  margin-top: 15px;
+}
+#player img{
+  margin-left: 15%;
+  width: 60%;
+  height: 30%
+}
+
+#player hr{
+  width: 60%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#player h4{
+  text-align: center;
+  margin-bottom: 10px;
+}
+#player span {
+ font-weight: bolder;
+  padding-left: 10%;
+
+  
+}
+
+#player button{
+  padding: 20px ;
+  width: 180px;
+  font-size: 20px;
+  font-weight: bold;
+  background: #fa6019;
+  color   : #ffffff;
+  border: none;
+  margin-top: 40px;
+  margin-left: 40%;
+  
+  
+ 
+  
+}
+
+ 
+/*****************************/
+/*FOOTER CSS RULES*/
+/****************************/
+
+#footer-section{
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  padding: 120px 180px 40px 180px;
+
+}
+#footer-section h2{
+  font-size: 35px;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  text-align: center;
+  
+}
+
+#faq{
+  text-align: left;
+}
+#faq h3 {
+  padding-top: 15px; 
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+#faq p{
+
+padding-top: 10px; 
+ line-height: 2.1em;
+}
+
+#sign-up{
+margin: 120px 90px 90px 40px;
+text-align: center;
+}
+#sign-up h3{
+  font-size: 30px;
+}#footer-section #sign-up .btn{
+  padding: 20px ;
+  width: 180px;
+  font-size: 20px;
+  font-weight: bold;
+  background: #fa6019;
+  color   : #ffffff;
+  border: none;
+  margin-top: 20px;
+}
+
+
+footer{
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  border-top: 3px solid  #fa6019;
+  padding: 30px 15%;
+  display: flex;
+justify-content: space-between;
+align-items: center;
+ 
+ 
+
+}
+.footer-link ul, .footer-icon ul{
+  
+  margin-bottom: 15px;
+  
+  
+}
+.footer-link ul li, .footer-icon ul li{
+  display: inline;
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+}
+.footer-link ul li a, .footer-icon ul li a{
+  color: #ffffff;
+  text-decoration: none;
+
+}
+.footer-link p{
+  display: inline;
+  padding-left: 45px;
+  padding-right: 10px;
+
+}
+
+.footer-link span a{
+  color: #ffff;
+  text-decoration: none;
+
+}
+.footer-icon{
+  display: inline;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.footer-icon span a{
+  color: #ffff;
+  text-decoration: none;
+}
+
+@media (max-width: 850px){
+
+    footer{
+      background: #000000;
+      color: #ffffff;
+      border-top: 3px solid  #fa6019;
+      padding: 30px 5px;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    
+    }
+
+    .footer-icon{
+      display: inline;
+      padding-top: 20px;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    #footer-section{
+      width: 100%;
+      background: #000000;
+      color: #ffffff;
+      padding: 80px 60px 20px 80px;
+    
+    }
+    #footer-section h2{
+      font-size: 25px;
+      margin-top: 70px;
+      margin-bottom: 40px;
+      text-align: center;
+      
+    }
+    
+    #faq{
+      text-align: left;
+    }
+    #faq h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    #faq p{
+    line-height: 1.6em;
+    }
+    
+    #sign-up{
+    margin: 120px 90px 90px 40px;
+    text-align: center;
+    }
+    #sign-up h3{
+      font-size: 25px;
+    }
+    #footer-section #sign-up .btn{
+      padding: 20px ;
+      width: 180px;
+      font-size: 20px;
+      font-weight: bold;
+      background: #fa6019;
+      color   : #ffffff;
+      border: none;
+      margin-top: 20px;
+    }
+
+/****************************/
+#player{
+  background: rgb(23,22,29);
+  background: linear-gradient(90deg, rgba(23,22,29,1) 0%, rgba(66,66,113,1) 37%, rgba(73,73,87,1) 54%, rgba(79,79,88,1) 80%, rgba(8,9,25,1) 100%);
+  color: #ffff;
+}
+#player h2{
+  text-align: center;
+  font-size: 25px;
+}
+#player img{
+  margin-left: 25%;
+  width: 50%;
+  height: 20%
+}
+
+#browse{
+  width: 100%;
+  text-align: justify;
+ 
+  background: #000000;
+  color: #ffffff;
+  
+  
+}
+
+#browse .browse{
+  text-align: center;
+  width: 100%
+}
+#browse h1{
+  padding-bottom: 3px;
+  font-size: 30px;
+
+}
+.browse .img-thumb .scroll{
+  width: 60%;
+ 
+  margin: 2px;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+ 
+}
+#second-view{
+  background: url("https://images.unsplash.com/photo-1516577529060-a399c7c9aa8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=960&q=40");
+  width: 100%;
+  height: 88vh;
+  min-height: 88vh;
+  padding-left: 45px;
+  padding-bottom: 30px;
+  color: #ffffff;
+  
+}
+.second-part {
+  margin-top: 0;
+  margin-bottom: 32px;
+ 
+}
+.second-part h1{
+    margin-bottom: 20px;
+   font-size: 20px;
+   font-weight: 600;
+    line-height: 1.0em;
+    padding-top: 160px;
+}
+
+
+ .second-part p {
+    margin-bottom: 18px;
+    line-height: 1.5em;
+    font-size: 18px;
+    font-weight: 200;   
+    font-kerning: auto;
+   
+}
+
+#second-view button{
+  margin-bottom: 80px;
+  
+}
+
+
+
+  }
